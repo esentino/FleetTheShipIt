@@ -1,24 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app
+  name: rabbit
   namespace: default
 spec:
-  replicas: 3
   selector:
     matchLabels:
-      app: app
+      app: rabbit
   template:
     metadata:
       labels:
-        app: app
+        app: rabbit
     spec:
       containers:
-      - name: app
-        image: januszjanowski/fleet-the-ship-it:1.0.2
+      - name: rabbit
+        image: rabbitmq:management
         resources:
           limits:
             memory: "128Mi"
-            cpu: "50m"
+            cpu: "500m"
         ports:
-        - containerPort: 8000
+        - containerPort: 5672
+
+
