@@ -1,19 +1,19 @@
-namespace: fleet-mc-helm-example
+defaultNamespace: default
 targetCustomizations:
 - name: dev
-  namespace: dev
+  defaultNamespace: dev
   helm:
     values:
       replication: false
 
 - name: test
-  namespace: test
+  defaultNamespace: test
   helm:
     values:
       replicas: 2
 
 - name: prod
-  namespace: prod
+  defaultNamespace: prod
   helm:
     values:
       replicas: 3
