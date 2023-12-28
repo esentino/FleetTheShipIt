@@ -7,6 +7,3 @@ spec:
     app: keydb
   ports:
   - port: 6379
-    targetPort: 6379
-    nodePort: 30379
-  type: NodePort
