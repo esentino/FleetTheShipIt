@@ -1,0 +1,19 @@
+namespace: fleet-mc-helm-example
+targetCustomizations:
+- name: dev
+  namespace: dev
+  helm:
+    values:
+      replication: false
+
+- name: test
+  namespace: test
+  helm:
+    values:
+      replicas: 2
+
+- name: prod
+  namespace: prod
+  helm:
+    values:
+      replicas: 3
