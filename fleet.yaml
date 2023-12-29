@@ -4,3 +4,6 @@ targetCustomizations:
   helm:
     values:
       replicas: 3
+  clusterSelector:
+    matchLabels:
+      env: prod
