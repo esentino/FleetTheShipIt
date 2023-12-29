@@ -9,7 +9,6 @@ targetCustomizations:
 namespace: test
 targetCustomizations:
 - name: test
-  defaultNamespace: test
   helm:
     values:
       replicas: 2
@@ -18,7 +17,6 @@ targetCustomizations:
 namespace: prod
 targetCustomizations:
 - name: prod
-  defaultNamespace: prod
   helm:
     values:
       replicas: 3
