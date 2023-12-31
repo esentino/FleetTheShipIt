@@ -11,3 +11,4 @@ spec:
   - fleet
   branch: main
   pollingInterval: 60s
+  targetNamespace: prod
