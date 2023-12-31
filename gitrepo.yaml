@@ -10,7 +10,7 @@ spec:
   paths:
   - .
   branch: main
-  pollingInterval: 180s
+  pollingInterval: 60s
   targets:
   - name: dev
     clusterSelector:
