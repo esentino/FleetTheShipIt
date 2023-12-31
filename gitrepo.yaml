@@ -11,11 +11,3 @@ spec:
   - fleet
   branch: main
   pollingInterval: 60s
-  targets:
-  - name: prod
-    clusterSelector:
-      matchExpressions:
-      - key: abc
-        operator: NotIn
-        value: nothing
-
