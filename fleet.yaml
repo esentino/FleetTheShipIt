@@ -1,4 +1,5 @@
 namespace: prod
+defaultNamespace: prod
 targetCustomizations:
 - name: prod
   helm:
