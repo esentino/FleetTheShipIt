@@ -1,12 +1,2 @@
 namespace: prod
 defaultNamespace: prod
-targetCustomizations:
-- name: prod
-  helm:
-    values:
-      replicas: 3
-  clusterSelector:
-    matchExpressions:
-    - key: abc
-      operator: NotIn
-      value: nothing
