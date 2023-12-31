@@ -8,11 +8,14 @@ spec:
   # Everything from this repo will be run in this cluster. You trust me right?
   repo: "https://github.com/esentino/FleetTheShipIt"
   paths:
-  - .
+  - fleet
   branch: main
   pollingInterval: 60s
   targets:
-  - name: dev
+  - name: prod
     clusterSelector:
-      matchLabels:
-        env: dev
+      matchExpressions:
+      - key: abc
+        operator: NotIn
+        value: nothing
+

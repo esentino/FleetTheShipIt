@@ -6,5 +6,7 @@ targetCustomizations:
     values:
       replicas: 3
   clusterSelector:
-    matchLabels:
-      env: prod
+    matchExpressions:
+    - key: abc
+      operator: NotIn
+      value: nothing
